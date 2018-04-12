@@ -7,3 +7,12 @@ def reverse_each_word(sentence)
   end
   return ray.join(" ") 
 end
+
+def reverse_each_word(sentence)
+  array = sentence.split(" ")
+  array.collect do |word|
+    word.reverse
+ 
+  end
+  return array.join(" ") 
+end
